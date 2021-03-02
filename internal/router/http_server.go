@@ -2,7 +2,6 @@ package router
 
 import (
 	"context"
-	"goal-layout/global"
 	"log"
 	"net/http"
 	"time"
@@ -16,12 +15,12 @@ var (
 func HttpServerRun() {
 
 	r := InitRouter()
-	port = global.ServerSetting.HttpPort
+	port = "8000"
 	HttpSrvHandler = &http.Server{
 		Addr:           ":" + port,
 		Handler:        r,
-		ReadTimeout:    global.ServerSetting.ReadTimeout,
-		WriteTimeout:   global.ServerSetting.WriteTimeout,
+		ReadTimeout:    1,
+		WriteTimeout:   1,
 		MaxHeaderBytes: 1 << 20,
 	}
 	go httpListen()

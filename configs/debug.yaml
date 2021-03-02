@@ -15,8 +15,4 @@ data:
     read_timeout: 0.2
     write_timeout: 0.2
 
-Log:
-  Level: trace
-  ReportCaller: true
-  Formatter: json
-  SavePath: storage/logs
+
