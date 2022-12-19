@@ -33,7 +33,7 @@ const (
 	LBRACE = "{"
 	RBRACE = "}"
 
-	//关键字
+	// 关键字
 	FUNCTION = "FUNCTION"
 	LET      = "LET"
 	TRUE     = "TRUE"
