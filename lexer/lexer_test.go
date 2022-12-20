@@ -225,3 +225,12 @@ if (5 < 10) {
 		}
 	}
 }
+
+func TestName(t *testing.T) {
+	/* 使用多种「基本数据类型」来初始化「数组」 */
+	numbers := make([]int, 5)
+	decimals := make([]float64, 5)
+	strings := make([]string, 5)
+	bools := make([]bool, 5)
+	t.Log(numbers, decimals, strings, bools)
+}
